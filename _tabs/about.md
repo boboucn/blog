@@ -2,6 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+math: true
 ---
 
 这里是我的个人网站（仍在建设中）。
