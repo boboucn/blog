@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<!--My image-->
 	<div id="image-container">
 		<div id="background-image"></div>
 	</div>
@@ -18,9 +19,26 @@
 			width: min(20vw, 20vh);
 			height: min(20vw, 20vh);
 			overflow: hidden;
-			background-image: url("/blog/assets/img/Chitanda-Eru.png");
+			/*background-image: url();*/
 			background-size: cover;
 		}
 	</style>
+	<script type="text/javascript">
+		var setstickerimg = function () {
+			var bgcolor = window.getComputedStyle(document.documentElement).getPropertyValue("--main-bg");
+			document.getElementById("background-image").style.backgroundImage =
+				"url('/blog/assets/img/Oreki-Hotaro" + (bgcolor == "white" ? "" : "_inversed") + ".png')";
+		};
+
+		var switchimg = function () {
+			if (document.getElementById("background-image").style.backgroundImage.includes("_inversed"))
+				document.getElementById("background-image").style.backgroundImage = "url('/blog/assets/img/Oreki-Hotaro.png')";
+			else
+				document.getElementById("background-image").style.backgroundImage = "url('/blog/assets/img/Oreki-Hotaro_inversed.png')";
+		}
+
+		window.onload = setstickerimg;
+		document.getElementById("mode-toggle").addEventListener('click', switchimg);
+	</script>
 </body>
 </html>
