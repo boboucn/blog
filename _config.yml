@@ -14,12 +14,12 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: "boboucn's blog" # the main title
+title: "boboucn's site" # the main title
 
-tagline: "这里是 boboucn 的个人博客。" # it will display as the subtitle
+tagline: "这里是 boboucn 的个人网站。" # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  "这里是 boboucn 的个人博客。"
+  "这里是 boboucn 的个人网站。"
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://testingcf.jsdelivr.net/gh/boboucn/blog/assets/avatar_compressed.jpg"
+avatar: "/assets/avatar_compressed.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
