@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<!--My image-->
@@ -16,8 +14,8 @@
 			right: 0;
 			opacity: 0.75;
 			z-index: 999;
-			width: min(20vw, 20vh);
-			height: min(20vw, 20vh);
+			width: min(25vw, 25vh);
+			height: min(25vw, 25vh);
 			overflow: hidden;
 			/*background-image: url();*/
 			background-size: cover;
@@ -29,6 +27,7 @@
 			document.getElementById("background-image").style.backgroundImage =
 				"url('/blog/assets/img/Oreki-Hotaro" + (bgcolor == "white" ? "" : "_inversed") + ".png')";
 		};
+		setstickerimg();
 
 		var switchimg = function () {
 			if (document.getElementById("background-image").style.backgroundImage.includes("_inversed")) {
@@ -38,8 +37,6 @@
 				document.getElementById("background-image").style.backgroundImage = "url('/blog/assets/img/Oreki-Hotaro_inversed.png')";
 			}
 		};
-
-		window.onload = setstickerimg;
 		document.getElementById("mode-toggle").addEventListener('click', switchimg);
 	</script>
 </body>
